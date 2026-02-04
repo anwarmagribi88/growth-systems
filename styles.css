@@ -1,11 +1,14 @@
 :root{
   --bg: #A78BFA;
-  --panel: rgba(255,255,255,.04);
-  --panel2: rgba(255,255,255,.06);
-  --text: rgba(255,255,255,.88);
-  --muted: rgba(255,255,255,.62);
-  --faint: rgba(255,255,255,.42);
-  --border: rgba(255,255,255,.10);
+  
+  --panel: rgba(255,255,255,0.18);
+  --panel2: rgba(255,255,255,0.26);
+  
+  --text: #1F1633;
+  --muted: rgba(31, 22, 51, 0.72);
+  --faint: rgba(31, 22, 51, 0.5);
+  
+  --border: rgba(31, 22, 51, 0.15);
   --shadow: 0 10px 30px rgba(0,0,0,.35);
   --radius: 18px;
   --max: 1040px;
@@ -17,10 +20,8 @@ html{ scroll-behavior: smooth; }
 body{
   margin:0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: radial-gradient(1200px 800px at 20% 0%, rgba(255,255,255,.08), transparent 55%),
-              radial-gradient(900px 700px at 90% 10%, rgba(255,255,255,.06), transparent 55%),
-              var(--bg);
-  color: rgba(20, 10, 40, 0.95);
+  background: var(--bg);
+  color: var(--text);
   line-height: 1.6;
 }
   
