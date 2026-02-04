@@ -15,19 +15,13 @@
 html{ scroll-behavior: smooth; }
 
 body{
-  color: rgba(20, 10, 40, 0.95);
   margin:0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: radial-gradient(1200px 800px at 20% 0%, rgba(255,255,255,.08), transparent 55%),
               radial-gradient(900px 700px at 90% 10%, rgba(255,255,255,.06), transparent 55%),
               var(--bg);
-  color: var(--text);
+  color: rgba(20, 10, 40, 0.95);
   line-height: 1.6;
-  .card,
-.meta-card,
-.step,
-.contact__card {
-  background: rgba(255,255,255,0.18);
 }
   
 }
@@ -175,6 +169,14 @@ a:hover{ opacity: .9; text-decoration: underline; text-underline-offset: 4px; }
   gap: 12px;
   margin-top: 12px;
 }
+
+.card,
+.meta-card,
+.step,
+.contact__card {
+  background: rgba(255,255,255,0.18);
+}
+
 .meta-card{
   border-radius: var(--radius);
   border: 1px solid var(--border);
