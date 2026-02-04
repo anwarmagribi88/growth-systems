@@ -266,6 +266,10 @@ a:hover{ opacity: .92; text-decoration: underline; text-underline-offset: 4px; }
   max-width: 72ch;
 }
 
+.section__emphasis{
+  margin: 18px 0 28px; /* top | sides | bottom */
+}
+
 /* Cards + grids */
 .grid{
   display:grid;
