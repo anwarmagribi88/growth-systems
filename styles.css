@@ -172,6 +172,53 @@ a:hover{ opacity: .92; text-decoration: underline; text-underline-offset: 4px; }
   color: var(--muted);
 }
 
+.hero__meta--readable{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.meta-card--readable{
+  padding: 16px 16px 18px;
+  position: relative;
+}
+
+.meta-card--readable::before{
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 26px;
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.16);
+}
+
+/* Better hierarchy */
+.meta-card--readable .meta-card__label{
+  margin-top: 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+}
+
+.meta-card--readable .meta-card__value{
+  margin-top: 8px;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  font-weight: 650;
+  color: var(--text);
+}
+
+/* Mobile: stack neatly */
+@media (max-width: 900px){
+  .hero__meta--readable{
+    grid-template-columns: 1fr;
+  }
+}
+
+
 .hero__meta{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
